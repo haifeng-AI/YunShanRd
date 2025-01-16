@@ -64,9 +64,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
 </head>
 <body>
-    <h1 style="color: #000080; font-weight: bold; text-align: center;">云山深基坑施工专家系统</h1>
     <img src="roadbridge_logo-removebg-preview.png" alt="Logo" style="position: absolute; top: 20px; right: 20px; max-width: 200px; height: auto;">
-
+    <h1 style="color: #000080; font-weight: bold; text-align: center; margin-top: 100px;">云山深基坑施工专家系统</h1>
+    
     <div id="password-container">
         <input type="password" id="password-input" placeholder="请输入密码...">
         <button onclick="checkPassword()">确认</button>
@@ -108,7 +108,7 @@
         }
 
         async function fetchAnswer(questionNumber) {
-            appendMessage('正在思考。。。', 'bot'); // 显示“正在思考。。。”
+            appendMessage('正在思考。。。', 'bot'); // 显示"正在思考。。。"
 
             let question = '';
             switch (questionNumber) {
