@@ -64,6 +64,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
 </head>
 <body>
+    <img src="roadbridge_logo-removebg-preview.png" alt="Logo" style="position: absolute; top: 20px; right: 20px; max-width: 200px; height: auto;">
     <h1 style="color: #000080; font-weight: bold; text-align: center;">云山深基坑施工专家系统</h1>
     
     <div id="password-container">
@@ -75,8 +76,8 @@
 
     <div id="faq-container" style="display: none;">
         <div class="faq" onclick="fetchAnswer(1)">演示问题1：请介绍云山路项目的工程概况</div>
-        <div class="faq" onclick="fetchAnswer(2)">演示问题2：请显示输出云山路钢筋笼尺寸允许偏差表</div>
-        <div class="faq" onclick="fetchAnswer(3)">演示问题3：请输出对Φ1000灌注桩首灌混凝土体积计算公式</div>
+        <div class="faq" onclick="fetchAnswer(2)">演示问题2：如果施工现场用电设备的PE线不接，将会产生哪些危害？</div>
+        <div class="faq" onclick="fetchAnswer(3)">演示问题3：请问在施工现场1类、2类、3类电动工具有哪些使用场景？</div>
     </div>
 
     <div id="chat-container"></div>
@@ -115,10 +116,10 @@
                     question = '请介绍云山路项目的工程概况';
                     break;
                 case 2:
-                    question = '请显示输出云山路钢筋笼尺寸允许偏差表';
+                    question = '如果施工现场用电设备的PE线不接，将会产生哪些危害？';
                     break;
                 case 3:
-                    question = '请输出对Φ1000灌注桩首灌混凝土体积计算公式';
+                    question = '请问在施工现场1类、2类、3类电动工具有哪些使用场景？';
                     break;
                 default:
                     appendMessage('没有找到相关答案。', 'bot');
